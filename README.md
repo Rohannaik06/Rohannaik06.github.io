@@ -6,25 +6,8 @@ This is a personal portfolio website created by **Rohan Naik** using HTML, CSS, 
 
 ## 🔗 Live Preview
 
-(https://Rohannaik06.github.io/MyPortfolio)  
+https://Rohannaik06.github.io/MyPortfolio  
 ---
-
-## 📁 Project Structure
-
-├── index.html # Home Page
-├── about.html # About Me
-├── skills.html # Technical Skills
-├── project.html # Project Showcase
-├── contact.html # Contact Form
-├── style.css # Main styling for index.html
-├── about.css # Styling for About page
-├── skills.css # Styling for Skills page
-├── project.css # Styling for Projects page
-├── contact.css # Styling for Contact page
-├── home.jpg # Profile image (used on home and about pages)
-├── project1.mp4 # Project demo video
-├── project2.mp4 # Project demo video
-
 
 ## ✨ Features
 
