@@ -6,7 +6,7 @@ This is a personal portfolio website created by **Rohan Naik** using HTML, CSS, 
 
 ## 🔗 Live Preview
 
-https://Rohannaik06.github.io/MyPortfolio  
+(https://rohannaik06.github.io/)
 ---
 
 ## ✨ Features
