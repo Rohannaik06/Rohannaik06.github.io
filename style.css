@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+     background-color: #1f242d;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:88%;
+    padding:20px;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.header a,span{
+    animation : slidedown 3s ease-out;
+}
+
+.social-media a{
+    animation : slidedown 3s ease-out;
+}
+
+
+@keyframes slidedown{
+    from{
+        transform:scale(0);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left:20px;   
+    margin-top:10px;
+}
+
+.logo1{
+   color:white
+}
+
+.logo2{
+    color:chocolate
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight: 500;
+    margin-left:35px;
+    transition:.4s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#0ef;
+}
+
+.home{
+    position:relative; 
+    height:80vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:70px 10% 0;
+    color:white;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size:32px;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin:-3px 0;
+}
+
+.home-content h3 span {
+    color:aqua
+}
+   
+.home-img img{
+   width: 400px;
+   height: 400px;
+   border-radius:50%;
+   object-fit:cover;
+}
+
+.social-media a{
+    color:aqua;
+}
+
+.social-media a{
+    display:inline-flex;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border:2px solid aqua;
+    border-radius:50%;
+    color:aqua;
+    font-size:20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items:center;
+    margin:30px 15px 30px 0;
+}
+
+.social-media a:hover{
+    background-color: rgb(118, 127, 127);
+    color:aqua;
+}  
