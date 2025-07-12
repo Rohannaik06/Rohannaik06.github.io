@@ -418,7 +418,107 @@ section {
 }
 
 /* === Responsive for Mobile Devices === */
- @media (max-width: 480px) {
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+  }
+
+  .logo {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .main-nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .home-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .home-text {
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .home-text h1 {
+    font-size: 36px;
+    line-height: 1.1;
+    margin: 8px 0;
+  }
+
+  .home-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .home-text p {
+    font-size: 14px;
+  }
+
+  .resume-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  .home-image img {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .projects-section .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-media video {
+    margin-top: 20px;
+  }
+
+  .contact-wrapper {
+    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .send-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+  /* Responsive Additions */
+  @media (max-width: 480px) {
     .section-title {
       font-size: 26px;
       margin-top: 80px; /* Increased to avoid overlap with About */
@@ -432,16 +532,6 @@ section {
 
     .social-links {
       margin-top: 20px; /* Prevent icon overlap */
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .social-links a {
-      width: 32px;
-      height: 32px;
-      font-size: 16px;
     }
 
     .skill-card {
@@ -506,28 +596,5 @@ section {
       margin-top: 20px;
     }
   }
-@media (min-width: 1440px) {
-    .home-section {
-      gap: 300px;
-    }
 
-    .home-text h1 {
-      font-size: 100px;
-    }
-
-    .home-text p {
-      font-size: 22px;
-    }
-
-    .resume-button a {
-      font-size: 18px;
-    }
-
-    .skill-card {
-      max-width: 300px;
-    }
-
-    .contact-wrapper {
-      max-width: 600px;
-    }
-  }
+  
