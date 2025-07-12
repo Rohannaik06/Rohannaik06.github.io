@@ -52,8 +52,89 @@
         </p>
     </section>
 
-    <!-- Projects Section -->
+    <!-- My Skills -->
+<section id="skills" class="skill-section">
+  <h2 class="section-title">My <span class="text-highlight">Skills</span></h2>
 
+  <div class="skills-grid">
+    <!-- Frontend -->
+    <div class="skill-card">
+      <i class="fas fa-code skill-icon"></i>
+      <h3>Frontend</h3>
+      <div class="skill-bar">
+        <p>HTML</p>
+        <div class="progress"><div class="fill" style="width: 95%;"></div></div>
+
+        <p>CSS</p>
+        <div class="progress"><div class="fill" style="width: 90%;"></div></div>
+
+        <p>JavaScript</p>
+        <div class="progress"><div class="fill" style="width: 85%;"></div></div>
+
+        <p>React.js</p>
+        <div class="progress"><div class="fill" style="width: 80%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-card">
+      <i class="fas fa-server skill-icon"></i>
+      <h3>Backend</h3>
+      <div class="skill-bar">
+        <p>C / C++</p>
+        <div class="progress"><div class="fill" style="width: 80%;"></div></div>
+
+        <p>Java</p>
+        <div class="progress"><div class="fill" style="width: 75%;"></div></div>
+
+        <p>Python</p>
+        <div class="progress"><div class="fill" style="width: 85%;"></div></div>
+
+        <p>Node.js + Express</p>
+        <div class="progress"><div class="fill" style="width: 70%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="skill-card">
+      <i class="fas fa-database skill-icon"></i>
+      <h3>Database</h3>
+      <div class="skill-bar">
+        <p>SQL</p>
+        <div class="progress"><div class="fill" style="width: 90%;"></div></div>
+
+        <p>MySQL</p>
+        <div class="progress"><div class="fill" style="width: 85%;"></div></div>
+
+        <p>NoSQL</p>
+        <div class="progress"><div class="fill" style="width: 70%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-card">
+      <i class="fas fa-tools skill-icon"></i>
+      <h3>Tools</h3>
+      <div class="skill-bar">
+        <p>Git</p>
+        <div class="progress"><div class="fill" style="width: 85%;"></div></div>
+
+        <p>GitHub</p>
+        <div class="progress"><div class="fill" style="width: 90%;"></div></div>
+
+        <p>VS Code</p>
+        <div class="progress"><div class="fill" style="width: 95%;"></div></div>
+
+        <p>Eclipse</p>
+        <div class="progress"><div class="fill" style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Projects Section -->
 <section id="projects" class="projects-section">
   <h2 class="section-title">Recent <span class="text-highlight">Projects</span></h2>
 
@@ -97,15 +178,13 @@
 </section>
 
 
-
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2 class="section-title">Get in <span class="text-highlight">Touch</span></h2>
         <p class="section-subtitle">Whether you’re looking to collaborate, hire, or just connect — I’d love to hear from you!</p>
 
         <div class="contact-wrapper">
-            <form class="contact-form" action="#" method="POST">
+            <form id="contact-form" class="contact-form" action="#" method="POST">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname" required>
 
@@ -120,6 +199,16 @@
 
                 <button type="submit" class="send-button">Send Message</button>
             </form>
+
+            <!-- Custom Modal Dialog -->
+              <div id="successModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>✅ Message Sent Successfully!</h2>
+                  <p>Thank you for reaching out. I'll get back to you soon.</p>
+                </div>
+              </div>
+
 
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> rohannaik29563@gmail.com</p>
