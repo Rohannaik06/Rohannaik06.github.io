@@ -3,42 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website | @Rohannaik</title>
+    <title>Portfolio | Rohan Naik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">
-            <span class="logo1">Port</span><span class="logo2">folio</span>
-        </h1>
 
-        <nav class="navbar">
-            <a href="/index.html" class="active">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/skills.html">Skills</a>
-            <a href="/project.html">Projects</a>
-            <a href="/contact.html">Contact</a>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="logo"> <span class="text-white">Port</span><span class="text-highlight">folio</span> </div>
+        <nav class="main-nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello , It's Me</h3>
-            <b><h1>Rohan Naik</h1></b>
-            <h3>And I'm a <span>Fronted Developer</span></h3>
-            <p>I have a strong foundation in programming , data structures , and software development.<br> I am proficient in languages like C/C++ and Java , and I have hands-on experience with web development.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/rohan-naik-4974552a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/naik_rohan_1426?igsh=MTM3enZldHM1NTB6Nw=="><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://t.me/Rohannaik06"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://youtube.com/@rohannaik1426?si=1MGSNWqBH83ooBgR"><i class="fa-brands fa-youtube"></i></a>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-text">
+            <h3>Hello, It's Me</h3>
+            <h1><strong>Rohan Naik</strong></h1>
+            <h3>And I'm a <span class="role">Software Developer</span></h3>
+            <p>I have a strong foundation in programming, data structures, and software development. I'm proficient in languages like C/C++ and Java, and have hands-on experience in web development.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rohan-naik-4974552a2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/naik_rohan_1426"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/Rohannaik06"><i class="fab fa-telegram"></i></a>
+                <a href="https://youtube.com/@rohannaik1426"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/Rohannaik06"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="resume-button">
+                <a href="/media/resume.docx" download>Download CV</a>
             </div>
         </div>
-        <div class="home-img">
-                <img src="home.jpg" alt="">
+        <div class="home-image">
+            <img src="/media/home.jpg" alt="Rohan Naik">
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About <span class="text-highlight">Me</span></h2>
+        <p class="about-description">
+            I am a passionate software and web developer who loves turning ideas into real digital experiences. I enjoy building clean, responsive websites and applications that are user-friendly and efficient. With a strong focus on writing quality code and solving real problems, I aim to create work that’s impactful and meaningful.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Recent <span class="text-highlight">Projects</span></h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-media">
+        <video src="/media/project1.mp4" autoplay muted controls></video>
+      </div>
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website using HTML, CSS, and JavaScript. Fully responsive and optimized for all devices.</p>
+        <div class="project-tags">
+          <span>#HTML</span>
+          <span>#CSS</span>
+          <span>#JavaScript</span>
+        </div>
+        <a href="https://github.com/Rohannaik06/portfolio" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-media">
+        <video src="/media/project2.mp4" autoplay muted controls></video>
+      </div>
+      <div class="project-info">
+        <h3>Rock Paper Scissors Game</h3>
+        <p>A simple Rock, Paper, and Scissors game implemented using HTML, CSS, and JavaScript.</p>
+        <div class="project-tags">
+          <span>#HTML</span>
+          <span>#CSS</span>
+          <span>#JavaScript</span>
+        </div>
+        <a href="https://github.com/Rohannaik06/rock-paper-scissors" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get in <span class="text-highlight">Touch</span></h2>
+        <p class="section-subtitle">Whether you’re looking to collaborate, hire, or just connect — I’d love to hear from you!</p>
+
+        <div class="contact-wrapper">
+            <form class="contact-form" action="#" method="POST">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="send-button">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> rohannaik29563@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Baramati, Dist-Pune, Maharashtra</p>
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/rohan-naik-4974552a2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/naik_rohan_1426"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/Rohannaik06"><i class="fab fa-telegram"></i></a>
+                    <a href="https://youtube.com/@rohannaik1426"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/Rohannaik06"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Rohan Naik. All rights reserved.
+    </footer>
 
     <script src="script.js"></script>
 </body>
