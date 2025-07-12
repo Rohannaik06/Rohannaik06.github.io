@@ -59,6 +59,7 @@ section {
   font-size: 16px;
   transition: color 0.3s;
 }
+
 .main-nav a:hover,
 .main-nav a.active {
   color: #0ef;
@@ -117,14 +118,20 @@ section {
 }
 .resume-button a {
   display: inline-block;
-  background-color: aqua;
-  color: black;
+  color:#0ef;
+  border:2px solid #0ef;
+  font-weight:800;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 16px;
   text-decoration: none;
   margin-top: 20px;
 }
+.resume-button a:hover{
+  background-color: #0ef;
+  color:black;
+}
+
 .home-image img {
   width: 320px;
   height: 320px;
@@ -138,10 +145,64 @@ section {
   text-align: center;
 }
 .about-description {
-  max-width: 800px;
+  width: 800px;
+  height:50px;
   margin: 0 auto;
   font-size: 1.2rem;
   text-align: justify;
+}
+
+/* === Skills Section === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #1f242d, #262b36);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px 20px;
+  color: white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+ 
+}
+
+.skill-icon {
+  font-size: 40px;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  color: chocolate;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.skill-card ul li::before {
+  content: "✔ ";
+  color: #0ef;
+  margin-right: 8px;
 }
 
 /* === Projects === */
@@ -299,6 +360,52 @@ section {
 .contact-social a:hover {
   color: chocolate;
 }
+
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal Box */
+
+.modal-content {
+  background-color: #1f242d;
+  color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Close button */
+.close-button {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+
 
 /* === Footer === */
 .footer {
