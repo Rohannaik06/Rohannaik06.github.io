@@ -515,3 +515,91 @@ section {
     text-align: center;
   }
 }
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .skill-card {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  .project-info h3 {
+    font-size: 18px;
+  }
+
+  .project-tags span {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .contact-form label {
+    font-size: 13px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .home-text h1 {
+    font-size: 48px;
+  }
+
+  .home-text h3 {
+    font-size: 22px;
+  }
+
+  .skill-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-section {
+    gap: 100px;
+  }
+
+  .home-text h1 {
+    font-size: 60px;
+  }
+
+  .home-text {
+    margin-left: 0;
+  }
+
+  .about-description {
+    width: 90%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-wrapper {
+    width: 80%;
+  }
+}
+
