@@ -597,36 +597,7 @@ section {
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .home-section {
-      gap: 100px;
-    }
-
-    .home-text h1 {
-      font-size: 60px;
-    }
-
-    .home-text {
-      margin-left: 0;
-    }
-
-    .about-description {
-      width: 90%;
-    }
-
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-wrapper {
-      width: 80%;
-    }
-  }
-
+ 
   @media (min-width: 1440px) {
     .home-section {
       gap: 300px;
